@@ -4,9 +4,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![alt text](diagram)
-
-[diagram]: https://github.com/tebrugge/elk_stack/blob/main/images/network_diagram.png
+![alt text](https://github.com/tebrugge/elk_stack/blob/main/images/network_diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, selecting certain ansible-playbooks of the project may be used to install only certain pieces of it, such as Filebeat.
 
