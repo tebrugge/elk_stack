@@ -174,12 +174,15 @@ SSH into the control node and follow the steps below:
 - Run the ansibe-playbooks in this order - install-elk.yml, filebeat-playbook.yml, and metricbeat-playbook.yml - from /etc/ansible
 
 	#this will be installed on ELK
+	
 	ansible-playbook install-elk.yml
 	
 	#this will be installed on webservers
+	
 	ansible-playbook filebeat-playbook.yml
 	
 	#this will be installed on webservers
+	
 	ansible-playbook metricbeat-playbook.yml
 	
 - Wait about 2-5 minutes for kibana to start up.
