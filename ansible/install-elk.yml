@@ -1,31 +1,31 @@
 ---
-- name: Configure Elk VM with Docker
+- name: configure elk vm with docker
   hosts: elk
   become: true
   tasks:
     
-    - name: Install docker.io
+    - name: install docker.io
       apt:
         update_cache: yes
         force_apt_get: yes
         name: docker.io
         state: present
 
-    - name: Install python3-pip
+    - name: install python3-pip
       apt:
         force_apt_get: yes
         name: python3-pip
         state: present
 
-    - name: Install Docker module
+    - name: install Docker module
       pip:
         name: docker
         state: present
 
-    - name: Increase virtual memory
+    - name: increase virtual memory
       command: sysctl -w vm.max_map_count=262144
 
-    - name: Use more memory
+    - name: use more memory
       sysctl:
         name: vm.max_map_count
         value: 262144

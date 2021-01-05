@@ -1,0 +1,11 @@
+---
+- name: Start filebeat - metricbeat Services
+  hosts: webservers
+  become: yes
+  tasks:
+
+  - name: start filebeat service
+    command: service filebeat start
+    
+  - name: start metricbeat service
+    command: service metricbeat start

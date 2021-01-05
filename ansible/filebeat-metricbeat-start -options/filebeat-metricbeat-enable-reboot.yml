@@ -1,0 +1,11 @@
+---
+- name: enable filebeat - metricbeat Services
+  hosts: webservers
+  become: yes
+  tasks:
+
+  - name: start filebeat service
+    command: systemctl enable filebeat.service
+    
+  - name: start metricbeat service
+    command: systemctl enable metricbeat.service
