@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![alt text](diagram)
 
-[diagram]: images/network_diagram.png
+[diagram]: https://github.com/tebrugge/elk_stack/blob/main/images/network_diagram.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, selecting certain ansible-playbooks of the project may be used to install only certain pieces of it, such as Filebeat.
 
@@ -89,7 +89,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
  
-![alt text](images/docker_ps_output.png)
+![alt text](https://github.com/tebrugge/elk_stack/blob/main/images/docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -188,7 +188,7 @@ SSH into the control node and follow the steps below:
 	
 - Using your browser, go to http://52.228.40.180:5601/app/kibana to verify that the installation is running as expected. You should see the kibana dashboard as seen below.
 
-![alt text](images/kibana.png)
+![alt text](https://github.com/tebrugge/elk_stack/blob/main/images/kibana.png)
 
 - Once everything is working - you can now decide if you want your Filebeat and Metricbeat to start manually or to enable them on systemd to start up when the virtual machines are booted up. The choice is yours.
 
